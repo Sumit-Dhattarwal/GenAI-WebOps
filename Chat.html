@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatgpt</title>
+  <script>
+    function function1() {
+        var cmd = document.getElementById("d1").value;
+        var xhr = new XMLHttpRequest();
+	console.log(cmd);
+        xhr.open("GET", "http://192.168.29.213/cgi-bin/input.py?q=" + cmd);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+                          if(this.readyState == 4){
+                                            document.getElementById("output").innerHTML=this.responseText;
+    }
+		  }
+	      }
+    function function2() {
+      // Add your code for the second button's functionality here
+    }
+
+    function function3() {
+      // Add your code for the third button's functionality here
+    }
+  </script>
+
+  <style>
+    /* Styling for the header */
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Styling for the footer */
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Styling for the button stack */
+    .button-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Study Buddy</h1>
+  </header>
+
+ 
+	  <input id="d1" name="q" />
+    <button class="button" onclick="function1()">What you want to learn?</button>
+    
+
+  
+  </div>
+  <div id="output">Output</div>
+
+ 
+
+  <!-- Your JavaScript functions should go here -->
+  
+</body>
+</html>
