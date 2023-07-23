@@ -12,7 +12,7 @@ doubt = form.getvalue("q")
 
 
 import openai
-mykey = "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"
+mykey = "yourCHATGPT_API"
 openai.api_key = mykey
 myinput=doubt
 response = openai.ChatCompletion.create(
