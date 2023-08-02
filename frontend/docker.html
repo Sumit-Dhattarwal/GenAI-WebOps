@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Docker Webpage</title>
+    <style>
+        a{
+                text-decoration:none;
+                color:white;
+                }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .button {
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Docker Portal</h1>
+    </header>
+    <div class="container">
+ <button  onClick="func()" class="button">
+        <a href="http://13.51.158.249/dockerrun.html" >Launch An Instance </a>
+</button>
+<button class="button"> <a href="http://13.51.158.249/dockerStart.html">Start an Instance </a> </button>
+<button class="button"> <a href="http://13.51.158.249/dockerExec.html">Run Command Inside an Instance </a></button>
+<button class="button">
+        <a href="http://13.51.158.249/cgi-bin/dockerRunning.py" >
+        Show Running Instances
+        </a>
+</button>
+<button class="button">
+        <a href="http://13.51.158.249/cgi-bin/dockerInstance.py" >
+        Show All Instances
+        </a>
+</button>
+<button class="button">
+        <a href="http://13.51.158.249/cgi-bin/dockerId.py" >
+        Show All Instances IDs
+        </a>
+</button>
+        <button class="button"><a href="http://13.51.158.249/dockerStop.html">Stop an Instance </a></button>
+        <button class="button"><a href="http://13.51.158.249/dockerDelete.html">Delete an Instance </a></button>
+
+	<button class="button"> <a href="http://13.51.158.249/dockerSQL.html">SetUp MySQL Inside Docker </a></button>
+        <button class="button">        <a href="http://13.51.158.249/dockerInDocker.html" >			
+         Run Docker Inside Docker </a></button>
+
+    </div>
+    <footer>
+        <p>Copyright &copy; Team Turtle 2023</p>
+    </footer>
+</body>
+</html>
